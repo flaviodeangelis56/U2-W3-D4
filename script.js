@@ -18,12 +18,8 @@ buttonLoad.onclick = async () => {
       col.innerHTML = `
       <div class="card mb-4 shadow-sm">
       <img src="${element.src.original}" alt="" />
-        <title>Placeholder</title>
-        <rect width="100%" height="100%" fill="#55595c" />
-        <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-      </svg>
       <div class="card-body">
-        <h5 class="card-title">Lorem Ipsum</h5>
+      <a href="dettagli.html?imgId=${element.id}"><h5 class="card-title">Lorem Ipsum</h5></a>
         <p class="card-text">
           This is a wider card with supporting text below as a natural lead-in to additional content. This
           content is a little bit longer.
@@ -69,12 +65,8 @@ buttonLoad2.onclick = async () => {
       col.innerHTML = `
       <div class="card mb-4 shadow-sm">
       <img src="${element.src.original}" alt="" />
-        <title>Placeholder</title>
-        <rect width="100%" height="100%" fill="#55595c" />
-        <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-      </svg>
       <div class="card-body">
-        <h5 class="card-title">Lorem Ipsum</h5>
+      <a href="dettagli.html?imgId=${element.id}"><h5 class="card-title">Lorem Ipsum</h5></a>
         <p class="card-text">
           This is a wider card with supporting text below as a natural lead-in to additional content. This
           content is a little bit longer.
@@ -122,13 +114,9 @@ const cercaImmagine = async event => {
       col.className = "col-md-4";
       col.innerHTML = `
       <div class="card mb-4 shadow-sm">
-      <img src="${element.src.original}" alt="" />
-        <title>Placeholder</title>
-        <rect width="100%" height="100%" fill="#55595c" />
-        <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-      </svg>
+      <img src="${element.src.original}" alt="" ismap />
       <div class="card-body">
-        <h5 class="card-title">Lorem Ipsum</h5>
+           <a href="dettagli.html?imgId=${element.id}"><h5 class="card-title">Lorem Ipsum</h5></a>
         <p class="card-text">
           This is a wider card with supporting text below as a natural lead-in to additional content. This
           content is a little bit longer.
